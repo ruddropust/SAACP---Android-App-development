@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_margin="12dp"
+            android:id="@+id/infoPart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_teacher_image_show"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/load_image_failed"/>
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/user_teacher_name_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teacher name"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:textColor="#0FBCF9"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/user_teacher_qualification_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teacher qualification"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="#0CAA53"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/user_teacher_status_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#191919"
+                    android:text="Teacher Status"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_margin="8dp"
+            android:layout_below="@id/infoPart"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccentBlack"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

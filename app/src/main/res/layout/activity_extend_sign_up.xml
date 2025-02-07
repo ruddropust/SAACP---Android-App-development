@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorThird"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledNameE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                app:counterMaxLength="30"
+                app:counterEnabled="true"
+                android:hint="Name">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_signUp"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:maxLength="30"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledusernameSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:prefixText="+880"
+                android:hint="Phone Number">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username_signUp"
+                    android:maxLength="10"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledStudentIdSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:counterEnabled="true"
+                app:counterMaxLength="6"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                app:endIconMode="clear_text"
+                android:hint="Student ID">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/studentId_signUp"
+                    android:maxLength="6"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/black"
+                    android:layout_marginTop="25dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_marginRight="30dp"
+                            android:id="@+id/radioButton"
+                            android:layout_width="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_height="50dp"
+                            android:scaleX="1.2"
+                            android:scaleY="1.2"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:layout_marginLeft="30dp"
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:scaleX="1.2"
+                            android:scaleY="1.2"
+                            android:layout_height="50dp"
+                            android:buttonTint="@color/black"
+                            android:text="Female" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Profile Picture"
+                android:layout_margin="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/muli_black"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/imageUpload"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/upload_image"
+                android:layout_marginBottom="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginRight="9dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/signUpButton"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/muli_black"
+                android:text="Save"
+                android:background="@drawable/round_black_but"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+    <!--
+    <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Image"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_black_but"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"/>
+    -->

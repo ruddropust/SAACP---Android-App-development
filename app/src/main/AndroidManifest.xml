@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/open_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/open_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".TODO.AlarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TODO.ToDoList"
+            android:exported="false" />
+        <activity
+            android:name=".ClassTime.ClassTimeList"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".UserView.UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".UserView.UserList"
+            android:exported="false" />
+        <activity
+            android:name=".UserNotice.NoticeListUser"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherUser.TeacherListUser"
+            android:exported="false" />
+        <activity
+            android:name=".AdminClassSchedule.AdminScheduleAdd"
+            android:exported="false" />
+        <activity
+            android:name=".AdminClassSchedule.ScheduleListAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNotice.AdminNoticeAdd"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNotice.NoticeListAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddTeacherAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.TeacherListAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminMenu"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".WellcomeScreen"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profile.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".AntiRagging.AntiRagging"
+            android:exported="false" />
+        <activity
+            android:name=".Bustracker.VehicleView"
+            android:exported="false" />
+        <activity
+            android:name=".Bustracker.BusTracker"
+            android:exported="false" />
+        <activity
+            android:name=".CGPACalculator.CgpaCalculator"
+            android:exported="false" />
+        <activity
+            android:name=".Developer.Developer"
+            android:exported="true" />
+        <activity
+            android:name=".Menu"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Authentication.ExtendSignUp"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.LinksentSuccessfully"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Register"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.MainActivity"
+            android:exported="true" />
+
+        <receiver android:name=".TODO.broadcastReceiver.AlarmBroadcastReceiver"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".TODO.broadcastReceiver.AlarmService"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    tools:context=".Bustracker.BusTracker">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/splash_name"
+            android:layout_width="155dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:text="PUST VTS"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="349dp"
+            android:layout_height="263dp"
+            android:layout_below="@id/splash_name"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_marginBottom="30dp"
+            app:lottie_rawRes="@raw/bus_tracking"
+            app:lottie_url="REPLACE_JSON_URL" />
+
+
+        <TextView
+            android:id="@+id/track_me"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_bg_but"
+            android:gravity="center"
+            android:text="Track Me"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

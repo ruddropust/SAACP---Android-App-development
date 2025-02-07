@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginui_admin"
+    tools:context=".Admin.AdminLogin">
+
+    <TextView
+        android:id="@+id/hello_there"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="Hello There!"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AdminUsernameLogin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:hint="Username"
+        app:boxStrokeColor="@color/colorRedThin"
+        app:hintTextColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_there">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_signUpAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AdminPasswordLogin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="333dp"
+        android:layout_height="59dp"
+        app:boxStrokeColor="@color/colorRedThin"
+        android:layout_marginTop="24dp"
+        android:hint="Password"
+        app:hintTextColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminUsernameLogin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_signUpAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LoginButonAdmin"
+        android:layout_width="160dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/round_bg_but_red"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/NeedHelpAdmin"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminPasswordLogin" />
+
+    <TextView
+        android:id="@+id/NeedHelpAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:text="Need help?"
+        android:textColor="@color/colorRedThin"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminPasswordLogin" />
+
+    <LinearLayout
+        android:id="@+id/not_admin"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButonAdmin"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/ArenotAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="Aren't an admin?"
+            android:textSize="18sp"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/userLoginAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Login"
+            android:textColor="@color/colorRedThin"
+            android:textSize="18sp"
+            tools:ignore="DuplicateIds" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

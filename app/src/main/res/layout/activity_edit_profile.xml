@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Profile.EditProfile"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/upload_image"
+            app:civ_border_color="@color/colorSecondary"
+            app:civ_border_width="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            android:pointerIcon="help"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            app:counterMaxLength="30"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/baseline_person_24"
+            app:endIconMode="clear_text"
+            android:hint="Name">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_name"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:maxLength="30"
+            android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            app:startIconDrawable="@drawable/email_logo_black"
+            app:endIconMode="clear_text"
+            android:hint="Email">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            app:startIconDrawable="@drawable/phone_logo_black"
+            app:endIconMode="clear_text"
+            app:counterMaxLength="10"
+            app:counterEnabled="true"
+            app:prefixText="+880"
+            app:prefixTextColor="@color/colorSecondary"
+            android:hint="Phone">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_phone"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="5dp"
+            app:startIconDrawable="@drawable/locatiob_icon_black"
+            app:endIconMode="clear_text"
+            android:layout_marginEnd="0dp"
+            android:hint="Location">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_location"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Group"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/muli_regular"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/EditBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:startIconDrawable="@drawable/baseline_bloodtype_24"
+                android:hint="Select">
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditFacebookLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="5dp"
+            app:startIconDrawable="@drawable/facebook_logo_black"
+            app:endIconMode="clear_text"
+            android:layout_marginEnd="0dp"
+            android:hint="Facebook link">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_facebookLink"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditGitLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="5dp"
+            app:startIconDrawable="@drawable/github_logo_black"
+            app:endIconMode="clear_text"
+            android:layout_marginEnd="0dp"
+            android:hint="Github Link">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_gitLink"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditLibkedinLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/linked_in_logo_black"
+            android:hint="LinkedIn Link">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_linkedInLink"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/SaveButton"
+            android:layout_marginTop="10dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSecondary"
+            android:text="Save"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
