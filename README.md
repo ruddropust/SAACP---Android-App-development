@@ -45,7 +45,7 @@ SAACP will serve as a digital assistant, reducing students' dependency on manual
 ### 7. Conclusion
 By integrating essential academic features into a single application, SAACP aims to make student life more efficient and organized. With continuous improvements and updates, it will serve as a valuable tool for CSE students at PUST.
 
-### Overview of Application (`SAACP`)
+### 8. Overview of Application (`SAACP`)
 
 <div align="center">
 
@@ -69,27 +69,17 @@ By integrating essential academic features into a single application, SAACP aims
     <td><img src="https://github.com/user-attachments/assets/f148a585-73ed-4452-9919-6298ffa61498" width="200"/></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/2ec7da82-d360-4392-a945-c0b85210d5b2" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/61f20ee6-74dc-4aa7-bdab-0b60c6decf80" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/4448ed08-e3fa-48c5-9a5b-244fab1e3c11" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/df540223-5b20-4198-82ce-d3e317b27bf9" width="200"/></td>
-  </tr>
-    <tr>
-    ![Image](https://github.com/user-attachments/assets/985549f0-6884-4c19-8ec6-f6b215736016)
-    ![Image](https://github.com/user-attachments/assets/830ea947-5106-4169-a410-cdc081c03258)
-    ![Image](https://github.com/user-attachments/assets/353ab4d3-7f79-49ff-8f39-26980f386667)
-    ![Image](https://github.com/user-attachments/assets/4836bf7b-d280-456c-81a1-cccf8a8b54cc)
+    <td><img src="https://github.com/user-attachments/assets/985549f0-6884-4c19-8ec6-f6b215736016" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/830ea947-5106-4169-a410-cdc081c03258" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/353ab4d3-7f79-49ff-8f39-26980f386667" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/4836bf7b-d280-456c-81a1-cccf8a8b54cc" width="200"/></td>
   </tr>
   <tr>
-    ![Image](https://github.com/user-attachments/assets/c1197517-90ba-4805-90ba-ac1ba9b2be2e)
-    ![Image](https://github.com/user-attachments/assets/0a1c062e-744e-4713-9efe-b6b75670778d)
-    ![Image](https://github.com/user-attachments/assets/4e36700a-58ff-4816-ab87-1319aa413632)
-    ![Image](https://github.com/user-attachments/assets/b9ce0af7-74c3-4f0d-a76f-27e9b8b7dd59)
-    ![Image](https://github.com/user-attachments/assets/45b08f94-4422-4457-af62-9730d0eb3f20)
+    <td><img src="https://github.com/user-attachments/assets/c1197517-90ba-4805-90ba-ac1ba9b2be2e" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/0a1c062e-744e-4713-9efe-b6b75670778d" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/4e36700a-58ff-4816-ab87-1319aa413632" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/b9ce0af7-74c3-4f0d-a76f-27e9b8b7dd59" width="200"/></td>
   </tr>
 </table>
 
 </div>
-
-
-
