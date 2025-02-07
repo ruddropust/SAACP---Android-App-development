@@ -83,11 +83,13 @@ By integrating essential academic features into a single application, SAACP aims
 </table>
 
 </div>
-
-## For Test Purpose used this credential
-** #### For User:**
-username: sharkabir01@gmail.com
-Password: 123456
-** #### For Admin:**
-username: admin
-Password: admin123
+<br>
+<br>
+## Download apk file from Here <a href="https://raw.githubusercontent.com/ruddropust/SAACP---Android-App-development/refs/heads/main/SAACP.apk">Download Apk</a> <br>
+## For Test Purpose used this credential  <br>
+** #### For User:** <br>
+username: sharkabir01@gmail.com <br>
+Password: 123456 <br>
+** #### For Admin:** <br>
+username: admin <br>
+Password: admin123 <br>
