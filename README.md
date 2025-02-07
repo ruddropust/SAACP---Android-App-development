@@ -33,7 +33,7 @@ SAACP (Student Assistant Application for CSE PUST) is an Android application dev
 - **Programming Language:** Java
 - **Development Platform:** Android Studio
 - **Database:** Firebase / SQLite (as per requirement)
-- **UI/UX Design:** XML, Material Design Principles
+- **UI/UX Design:** XML, Material Design Principles, Figma
 
 ### 5. Target Users
 - CSE students at PUST
